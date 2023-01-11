@@ -18,10 +18,10 @@ def brain_even_game():
 		print('Correct!')
 
 		if number_of_correct_answers == 3:
-			print(f'Congratulations, {name}!')
+			return f'Congratulations, {name}!'
 			number_of_correct_answers = 0
 			
 	else:
 		number_of_correct_answers = 0
 		print(answer, ' is wrong answer ;(. Correct answer was \'no\'.')
-		print(f'Let\'s try again, {name}!')
+		return f'Let\'s try again, {name}!'
