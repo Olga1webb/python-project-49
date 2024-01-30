@@ -1,4 +1,4 @@
-import prompt
+cdimport prompt
 
 
 def welcome_user():

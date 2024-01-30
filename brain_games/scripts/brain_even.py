@@ -11,8 +11,8 @@ def main():
 
 	number = generate_random_numbers()
 	user_answer = get_answers()
-	compare_answers(user_answer, number)
-	
+	a = compare_answers(number, user_answer)
+	'''print (a)'''
 
 if __name__ == '__main__':
 	main()
