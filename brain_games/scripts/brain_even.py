@@ -1,18 +1,18 @@
+#!/usr/bin/env python3
 from brain_games.random_numbers import generate_random_numbers
-from brain_games.check_answers_if_even import answers 
-from brain_games.check_answers_if_even import compare_answers 
+from brain_games.check_answers_if_even import get_answers
+from brain_games.compare import compare_answers
 
 
-def brain_even_game():
-	number_of_correct_answers = 0
-	number_of_tries = 0
+def main():
+	
 
 	print('Answer "yes" if the number is even, otherwise answer "no".')
 
-	generate_random_numbers()
-	answers()
-	compare_answers()
-
-
+	number = generate_random_numbers()
+	user_answer = get_answers()
+	compare_answers(user_answer, number)
 	
-	
+
+if __name__ == '__main__':
+	main()
