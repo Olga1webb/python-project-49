@@ -8,12 +8,13 @@ from brain_games.keep_the_score import score_keeper
 
 
 def main():
+	n = 0
 	print('Welcome to the Brain Games!')
 	name = welcome_user()
 	print('Answer "yes" if the number is even, otherwise answer "no".')
 	number = generate_random_numbers()
 	user_answer = get_answers()
-	n = compare_answers(number, user_answer, name)
+	n = compare_answers(number, user_answer, name, n)
 	'''print (a)'''
 	#got n - number of correct answers in a row
 	score = score_keeper(n, name)
