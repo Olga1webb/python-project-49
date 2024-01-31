@@ -16,7 +16,6 @@ def main():
 	number2 = generate_random_numbers()
 	print_question (number1, number2)
 	correct_answer = find_gcd(number1, number2)
-	print(correct_answer)
 	user_answer = get_answers()
 	n = check_answers(n, name, correct_answer, user_answer)
 	#got n - number of correct answers in a row

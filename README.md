@@ -8,3 +8,6 @@
 
 Аскинема для brain-calc:
 <a href="https://asciinema.org/connect/d8fbb093-63bf-4684-a429-c3e47078b984">
+
+Аскинема для brain-gcd:
+<a href="https://asciinema.org/connect/d8fbb093-63bf-4684-a429-c3e47078b984">
