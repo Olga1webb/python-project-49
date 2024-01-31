@@ -13,6 +13,7 @@ def main():
 	name = welcome_user()
 	print('Answer "yes" if the number is even, otherwise answer "no".')
 	number = generate_random_numbers()
+	print ('Question:', number)
 	user_answer = get_answers()
 	n = compare_answers(number, user_answer, name, n)
 	'''print (a)'''

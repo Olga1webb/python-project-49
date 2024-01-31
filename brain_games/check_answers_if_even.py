@@ -3,7 +3,6 @@ def get_answers():
 
 	
 	answer = input('Your answer: ')
-	print()
 	return answer
 
 '''def compare_answers():
