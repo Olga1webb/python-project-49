@@ -17,11 +17,13 @@ def main():
 	number2 = generate_random_numbers()
 	operator = generate_operator()
 	correct_answer = question (number1, number2, operator)
+	print (correct_answer)
 	user_answer = get_answers()
 	n = check_answers(n, name, correct_answer, user_answer)
+	print (n)
 	'''print (a)'''
 	#got n - number of correct answers in a row
-	score = counter(n)
+	#score = counter(n)
 
 
 if __name__ == '__main__':
