@@ -3,7 +3,7 @@ from question import question
 from cli import welcome_user
 
 def check_answers(n, name, correct_answer, user_answer):
-	if int(user_answer) == int(correct_answer):
+	if str(user_answer) == str(correct_answer):
 		a = 'Correct!'
 		n += 1
 		print(a)
