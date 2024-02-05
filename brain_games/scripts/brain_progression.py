@@ -7,7 +7,7 @@ from brain_games.generate_progression import generate_progression
 from brain_games.ask_question import ask_question
 from brain_games.check_answers_if_even import get_answers
 from brain_games.check import check_answers
-from brain_games.counter import counter
+from brain_games.counter_generate import counter
 
 
 def main():
@@ -22,9 +22,8 @@ def main():
 	correct_answer = ask_question(progression, position)
 	user_answer = get_answers()
 	n = check_answers(n, name, correct_answer, user_answer)
-	'''print (a)'''
 	#got n - number of correct answers in a row
-	#score = counter(n, name)
+	score = counter(n, name)
 
 
 if __name__ == '__main__':
