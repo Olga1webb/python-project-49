@@ -7,7 +7,9 @@ def compare_answers(number, user_answer, name, n):
 	number = generate_random_numbers()'''
 	#name = welcome_user()
 	for i in range(2,number):
-		correct_answer = bool(number % i == 0)
+		correct_answer = bool(number % i != 0)
+		if correct_answer == False:
+			break 
 
 	if (correct_answer is True and user_answer == 'yes') or (correct_answer is False and user_answer == 'no'):
 		a ='Correct!'
