@@ -11,7 +11,7 @@ def main():
 	n = 0
 	print('Welcome to the Brain Games!')
 	name = welcome_user()
-	print('Answer "yes" if the number is even, otherwise answer "no".')
+	print('Answer "yes" if given number is prime. Otherwise answer "no".')
 	number = generate_random_numbers()
 	print ('Question:', number)
 	user_answer = get_answers()
