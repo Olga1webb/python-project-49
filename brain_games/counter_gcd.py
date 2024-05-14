@@ -1,9 +1,9 @@
-from check_answers_if_even import get_answers
-from random_numbers import generate_random_numbers
-from question_gcd import print_question
-from find_gcd import find_gcd
-from check_answers_if_even import get_answers
-from check import check_answers
+from brain_games.check_answers_if_even import get_answers
+from brain_games.random_numbers import generate_random_numbers
+from brain_games.question_gcd import print_question
+from brain_games.find_gcd import find_gcd
+from brain_games.check_answers_if_even import get_answers
+from brain_games.check import check_answers
 
 
 def counter(n, name):

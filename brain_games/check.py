@@ -1,6 +1,6 @@
-from check_answers_if_even import get_answers
-from question import question
-from cli import welcome_user
+from brain_games.check_answers_if_even import get_answers
+from brain_games.question import question
+from brain_games.cli import welcome_user
 
 def check_answers(n, name, correct_answer, user_answer):
 	if str(user_answer) == str(correct_answer):

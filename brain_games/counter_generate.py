@@ -1,9 +1,9 @@
-from check_answers_if_even import get_answers
-from random_numbers import generate_random_numbers
-from random_numbers_to_ten import generate_random_numbers_to_ten
-from generate_progression import generate_progression
-from ask_question import ask_question
-from check import check_answers
+from brain_games.check_answers_if_even import get_answers
+from brain_games.random_numbers import generate_random_numbers
+from brain_games.random_numbers_to_ten import generate_random_numbers_to_ten
+from brain_games.generate_progression import generate_progression
+from brain_games.ask_question import ask_question
+from brain_games.check import check_answers
 
 
 def counter(n, name):

@@ -1,8 +1,8 @@
-from check_answers_if_even import get_answers
-from random_numbers import generate_random_numbers
-from operations import generate_operator
-from question import question
-from check import check_answers
+from brain_games.check_answers_if_even import get_answers
+from brain_games.random_numbers import generate_random_numbers
+from brain_games.operations import generate_operator
+from brain_games.question import question
+from brain_games.check import check_answers
 
 
 def counter(n, name):

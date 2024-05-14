@@ -1,6 +1,6 @@
-from check_answers_if_even import get_answers
-from random_numbers import generate_random_numbers
-from cli import welcome_user
+from brain_games.check_answers_if_even import get_answers
+from brain_games.random_numbers import generate_random_numbers
+from brain_games.cli import welcome_user
 
 def compare_answers(number, user_answer, name, n):
 	'''user_answer = get_answers()

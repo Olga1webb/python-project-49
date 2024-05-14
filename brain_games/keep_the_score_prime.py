@@ -1,6 +1,6 @@
-from check_answers_if_even import get_answers
-from random_numbers import generate_random_numbers
-from compare_prime import compare_answers
+from brain_games.check_answers_if_even import get_answers
+from brain_games.random_numbers import generate_random_numbers
+from brain_games.compare_prime import compare_answers
 
 def score_keeper(n, name):
 	while n < 3:
