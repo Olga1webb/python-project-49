@@ -18,8 +18,8 @@ def compare_answers(number, user_answer, name, n):
 	else:
 		n = 0
 		if correct_answer is True:
-			a = user_answer + " is wrong answer ;(. Correct answer was 'yes'\nLet's try again, " + name
+			a = user_answer + " is wrong answer ;(. Correct answer was 'yes'\nLet's try again, " + name + "!"
 		else:
-			a = user_answer + " is wrong answer ;(. Correct answer was 'no'\nLet's try again, " + name
-		print(a)	
+			a = user_answer + " is wrong answer ;(. Correct answer was 'no'\nLet's try again, " + name + "!"
+		print(a)
 		return(n)

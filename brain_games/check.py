@@ -10,6 +10,6 @@ def check_answers(n, name, correct_answer, user_answer):
 		return(n)
 	else:
 		n = 0
-		a =	f"'{user_answer}'' is wrong answer ;(. Correct answer was '{correct_answer}'\nLet's try again, {name}"
+		a =	f"'{user_answer}'' is wrong answer ;(. Correct answer was '{correct_answer}'\nLet's try again, {name}!"
 		print(a)
 		return(n)
