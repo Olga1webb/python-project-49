@@ -18,7 +18,7 @@ def main():
 	n = compare_answers(number, user_answer, name, n)
 	'''print (a)'''
 	#got n - number of correct answers in a row
-	score = score_keeper(n, name)
+	score_keeper(n, name)
 
 
 if __name__ == '__main__':
