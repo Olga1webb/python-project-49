@@ -8,18 +8,18 @@ from brain_games.keep_the_score_prime import score_keeper
 
 
 def main():
-	n = 0
-	print('Welcome to the Brain Games!')
-	name = welcome_user()
-	print('Answer "yes" if given number is prime. Otherwise answer "no".')
-	number = generate_random_numbers()
-	print ('Question:', number)
-	user_answer = get_answers()
-	n = compare_answers(number, user_answer, name, n)
-	'''print (a)'''
-	#got n - number of correct answers in a row
-	score_keeper(n, name)
+    n = 0
+    print('Welcome to the Brain Games!')
+    name = welcome_user()
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    number = generate_random_numbers()
+    print ('Question:', number)
+    user_answer = get_answers()
+    n = compare_answers(number, user_answer, name, n)
+    '''print (a)'''
+    #got n - number of correct answers in a row
+    score_keeper(n, name)
 
 
 if __name__ == '__main__':
-	main()
+    main()

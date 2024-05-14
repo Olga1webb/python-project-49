@@ -7,17 +7,17 @@ from brain_games.keep_the_score import score_keeper
 
 
 def main():
-	n = 0
-	print('Welcome to the Brain Games!')
-	name = welcome_user()
-	print('Answer "yes" if the number is even, otherwise answer "no".')
-	number = generate_random_numbers()
-	print ('Question:', number)
-	user_answer = get_answers()
-	n = compare_answers(number, user_answer, name, n)
-	#got n - number of correct answers in a row
-	score_keeper(n, name)
+    n = 0
+    print('Welcome to the Brain Games!')
+    name = welcome_user()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+    number = generate_random_numbers()
+    print ('Question:', number)
+    user_answer = get_answers()
+    n = compare_answers(number, user_answer, name, n)
+    #got n - number of correct answers in a row
+    score_keeper(n, name)
 
 
 if __name__ == '__main__':
-	main()
+    main()

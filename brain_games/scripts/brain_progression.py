@@ -11,20 +11,20 @@ from brain_games.counter_generate import counter
 
 
 def main():
-	n = 0
-	print('Welcome to the Brain Games!')
-	name = welcome_user()
-	print('What number is missing in the progression?')
-	start_number = generate_random_numbers()
-	step_number = generate_random_numbers_to_ten()
-	progression = generate_progression(start_number, step_number)
-	position = generate_random_numbers_to_ten()
-	correct_answer = ask_question(progression, position)
-	user_answer = get_answers()
-	n = check_answers(n, name, correct_answer, user_answer)
-	#got n - number of correct answers in a row
-	score = counter(n, name)
+    n = 0
+    print('Welcome to the Brain Games!')
+    name = welcome_user()
+    print('What number is missing in the progression?')
+    start_number = generate_random_numbers()
+    step_number = generate_random_numbers_to_ten()
+    progression = generate_progression(start_number, step_number)
+    position = generate_random_numbers_to_ten()
+    correct_answer = ask_question(progression, position)
+    user_answer = get_answers()
+    n = check_answers(n, name, correct_answer, user_answer)
+    #got n - number of correct answers in a row
+    score = counter(n, name)
 
 
 if __name__ == '__main__':
-	main()
+    main()

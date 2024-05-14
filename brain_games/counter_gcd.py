@@ -7,13 +7,13 @@ from brain_games.check import check_answers
 
 
 def counter(n, name):
-	while 0 < n < 3:
-		number1 = generate_random_numbers()
-		number2 = generate_random_numbers()
-		print_question (number1, number2)
-		correct_answer = find_gcd(number1, number2)
-		user_answer = get_answers()
-		n = check_answers(n, name, correct_answer, user_answer)
-		if n == 3:
-			print(f'Congratulations, {name}!')
-	return (n)
+    while 0 < n < 3:
+        number1 = generate_random_numbers()
+        number2 = generate_random_numbers()
+        print_question (number1, number2)
+        correct_answer = find_gcd(number1, number2)
+        user_answer = get_answers()
+        n = check_answers(n, name, correct_answer, user_answer)
+        if n == 3:
+            print(f'Congratulations, {name}!')
+    return (n)

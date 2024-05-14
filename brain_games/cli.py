@@ -2,7 +2,7 @@ import prompt
 
 
 def welcome_user():
-	"""Welcoming user"""
-	name = prompt.string('May I have your name? ')
-	print(f'Hello, {name}!')
-	return name
+    """Welcoming user"""
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    return name
