@@ -1,6 +1,3 @@
-from brain_games.random_numbers import generate_random_numbers
-
-
 def generate_progression(start_number, step_number):
     progression = [start_number]
     a = start_number

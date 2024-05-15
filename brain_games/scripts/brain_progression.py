@@ -22,7 +22,7 @@ def main():
     user_answer = get_answers()
     n = check_answers(n, name, correct_answer, user_answer)
     # got n - number of correct answers in a row
-    score = counter(n, name)
+    counter(n, name)
 
 
 if __name__ == '__main__':
