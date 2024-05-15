@@ -1,4 +1,5 @@
 def compare_answers(number, user_answer, name, n):
+    correct_answer = True
     for i in range(2, number):
         correct_answer = bool(number % i != 0)
         if correct_answer is False:
