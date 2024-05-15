@@ -4,7 +4,7 @@ from brain_games.random_numbers import generate_random_numbers
 from brain_games.check_answers_if_even import get_answers
 from brain_games.compare_prime import compare_answers
 from brain_games.keep_the_score_prime import score_keeper
-#from brain_games.cli import name
+# from brain_games.cli import name
 
 
 def main():
@@ -13,11 +13,10 @@ def main():
     name = welcome_user()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     number = generate_random_numbers()
-    print ('Question:', number)
+    print('Question:', number)
     user_answer = get_answers()
     n = compare_answers(number, user_answer, name, n)
-    '''print (a)'''
-    #got n - number of correct answers in a row
+    # got n - number of correct answers in a row
     score_keeper(n, name)
 
 

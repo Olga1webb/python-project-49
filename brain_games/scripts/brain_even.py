@@ -12,10 +12,10 @@ def main():
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     number = generate_random_numbers()
-    print ('Question:', number)
+    print('Question:', number)
     user_answer = get_answers()
     n = compare_answers(number, user_answer, name, n)
-    #got n - number of correct answers in a row
+    # got n - number of correct answers in a row
     score_keeper(n, name)
 
 

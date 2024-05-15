@@ -7,6 +7,7 @@ from brain_games.check_answers_if_even import get_answers
 from brain_games.check import check_answers
 from brain_games.counter_gcd import counter
 
+
 def main():
     n = 0
     print('Welcome to the Brain Games!')
@@ -14,11 +15,11 @@ def main():
     print('Find the greatest common divisor of given numbers.')
     number1 = generate_random_numbers()
     number2 = generate_random_numbers()
-    print_question (number1, number2)
+    print_question(number1, number2)
     correct_answer = find_gcd(number1, number2)
     user_answer = get_answers()
     n = check_answers(n, name, correct_answer, user_answer)
-    #got n - number of correct answers in a row
+    # got n - number of correct answers in a row
     counter(n, name)
 
 

@@ -17,4 +17,4 @@ def counter(n, name):
         n = check_answers(n, name, correct_answer, user_answer)
         if n == 3:
             print(f'Congratulations, {name}!')
-    return (n)
+    return n

@@ -7,6 +7,4 @@ def generate_progression(start_number, step_number):
     for i in range(10):
         a += step_number
         progression.append(a)
-        
     return progression
-
