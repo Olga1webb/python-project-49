@@ -1,3 +1,9 @@
 .venv/
 __pycache__
 dist/
+/brain_games/scripts/.python-version
+/brain_games/temp
+.python-version
+*.pyc
+*/__pycache__
+
