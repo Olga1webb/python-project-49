@@ -13,14 +13,18 @@ def main():
     print('Welcome to the Brain Games!')
     name = welcome_user()
     print('What is the result of the expression?')
-    number1 = generate_random_numbers()
-    number2 = generate_random_numbers()
-    operator = generate_operator()
-    correct_answer = question(number1, number2, operator)
-    user_answer = get_answers()
-    n = check_answers(n, name, correct_answer, user_answer)
+    while 0 <= n < 3:
+        number1 = generate_random_numbers()
+        number2 = generate_random_numbers()
+        operator = generate_operator()
+        correct_answer = question(number1, number2, operator)
+        user_answer = get_answers()
+        n = check_answers(n, name, correct_answer, user_answer)
     # got n - number of correct answers in a row
-    counter(n, name)
+        if n == 0:
+            break
+    if n == 3:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':
