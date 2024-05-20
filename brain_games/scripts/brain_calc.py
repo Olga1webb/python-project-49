@@ -5,7 +5,6 @@ from brain_games.operations import generate_operator
 from brain_games.question import question
 from brain_games.check_answers_if_even import get_answers
 from brain_games.check import check_answers
-from brain_games.counter import counter
 
 
 def main():
