@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from brain_games.cli import welcome_user
 from brain_games.random_numbers import generate_random_numbers
-from brain_games.check_answers_if_even import get_answers
+from brain_games.get_users_answer import get_answers
 from brain_games.actions_depending_on_users_answer import *
 from random import choice
 

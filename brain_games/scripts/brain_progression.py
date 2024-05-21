@@ -1,11 +1,27 @@
 #!/usr/bin/env python3
 from brain_games.cli import welcome_user
 from brain_games.random_numbers import generate_random_numbers
-from brain_games.random_numbers_to_ten import generate_random_numbers_to_ten
-from brain_games.generate_progression import generate_progression
-from brain_games.ask_question import ask_question
-from brain_games.check_answers_if_even import get_answers
-from brain_games.check import check_answers
+from brain_games.get_users_answer import get_answers
+from brain_games.actions_depending_on_users_answer import *
+
+
+def generate_progression(start_number, step_number):
+    progression = [start_number]
+    a = start_number
+    for i in range(10):
+        a += step_number
+        progression.append(a)
+    return progression
+
+
+def ask_question(progression, position):
+    correct_answer = progression[position]
+    progression[position] = '..'
+    pr = ''
+    for val in progression:
+        pr = str(pr) + str(val) + ' '
+    print(f'Question: {pr}')
+    return correct_answer
 
 
 def main():
@@ -15,17 +31,17 @@ def main():
     print('What number is missing in the progression?')
     while 0 <= n < 3:
         start_number = generate_random_numbers()
-        step_number = generate_random_numbers_to_ten()
+        step_number = generate_random_numbers(10)
         progression = generate_progression(start_number, step_number)
-        position = generate_random_numbers_to_ten()
+        position = generate_random_numbers(10)
         correct_answer = ask_question(progression, position)
         user_answer = get_answers()
-        n = check_answers(n, name, correct_answer, user_answer)
-        # got n - number of correct answers in a row
-        if n == 0:
-            break # the game is lost
-    if n == 3:
-            print(f'Congratulations, {name}!')
+        if check(user_answer, correct_answer):
+            n = do_if_correct(n)
+        else:
+            do_if_wrong(user_answer, correct_answer, name)
+            break
+        do_if_three_in_row(n, name)
 
 
 if __name__ == '__main__':

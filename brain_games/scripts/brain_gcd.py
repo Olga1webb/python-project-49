@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
 from brain_games.cli import welcome_user
 from brain_games.random_numbers import generate_random_numbers
-from brain_games.question_gcd import print_question
-from brain_games.find_gcd import find_gcd
-from brain_games.check_answers_if_even import get_answers
-from brain_games.check import check_answers
+from brain_games.get_users_answer import get_answers
+from brain_games.actions_depending_on_users_answer import *
+import math
+
+
+def print_question(number1, number2):
+    print(f'Question: {number1} {number2}')
+
+
+def find_gcd(number1, number2):
+    correct_answer = math.gcd(number1, number2)
+    return correct_answer
 
 
 def main():
@@ -18,12 +26,12 @@ def main():
         print_question(number1, number2)
         correct_answer = find_gcd(number1, number2)
         user_answer = get_answers()
-        n = check_answers(n, name, correct_answer, user_answer)
-        # got n - number of correct answers in a row
-        if n == 0:
+        if check(user_answer, correct_answer):
+            n = do_if_correct(n)
+        else:
+            do_if_wrong(user_answer, correct_answer, name)
             break
-    if n == 3:
-        print(f'Congratulations, {name}!')
+        do_if_three_in_row(n, name)
 
 
 if __name__ == '__main__':
