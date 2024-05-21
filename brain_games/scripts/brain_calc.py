@@ -1,10 +1,27 @@
 #!/usr/bin/env python3
 from brain_games.cli import welcome_user
 from brain_games.random_numbers import generate_random_numbers
-from brain_games.operations import generate_operator
-from brain_games.question import question
 from brain_games.check_answers_if_even import get_answers
-from brain_games.check import check_answers
+from brain_games.actions_depending_on_users_answer import *
+from random import choice
+
+
+def generate_operator():
+    """Generates random operation"""
+    operator = choice('+-*')
+    return operator
+
+
+def question(number1, number2, operator):
+    question = str(number1) + ' ' + str(operator) + ' ' + str(number2)
+    print(f'Question: {question}')
+    if operator == '+':
+        correct_answer = number1 + number2
+    elif operator == '-':
+        correct_answer = number1 - number2
+    else:
+        correct_answer = number1 * number2
+    return correct_answer
 
 
 def main():
@@ -18,12 +35,12 @@ def main():
         operator = generate_operator()
         correct_answer = question(number1, number2, operator)
         user_answer = get_answers()
-        n = check_answers(n, name, correct_answer, user_answer)
-    # got n - number of correct answers in a row
-        if n == 0:
+        if check(user_answer, correct_answer):
+            n = do_if_correct(n)
+        else:
+            do_if_wrong(user_answer, correct_answer, name)
             break
-    if n == 3:
-        print(f'Congratulations, {name}!')
+        do_if_three_in_row(n, name)
 
 
 if __name__ == '__main__':
